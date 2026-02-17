@@ -1,8 +1,8 @@
 class LangfuseCli < Formula
   desc "CLI tool for Langfuse LLM observability platform"
   homepage "https://github.com/aviadshiber/langfuse-cli"
-  url "https://files.pythonhosted.org/packages/source/l/langfuse-cli/langfuse_cli-0.1.2.tar.gz"
-  sha256 "4e8b1bc7a488dba52ebfedcfce479ed6b9c70e6dedbac659a5cac073fb46180c"
+  url "https://files.pythonhosted.org/packages/source/l/langfuse-cli/langfuse_cli-0.1.3.tar.gz"
+  sha256 "5e3791d2c919a285ec068db8337356c467f5b998ce29a2f6bcedea27f6481148"
   license "MIT"
 
   depends_on "python@3.12"
