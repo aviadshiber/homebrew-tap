@@ -6,6 +6,7 @@ class JavaFunctionalLsp < Formula
   license "MIT"
 
   depends_on "python@3.12"
+  depends_on "jdtls" => :recommended
 
   def install
     python3 = "python3.12"
