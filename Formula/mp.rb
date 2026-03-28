@@ -5,21 +5,21 @@
 class Mp < Formula
   desc "Mixpanel CLI - query analytics from your terminal"
   homepage "https://github.com/aviadshiber/mp"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aviadshiber/mp/releases/download/v0.1.1/mp_0.1.1_darwin_amd64.tar.gz"
-      sha256 "845e4cc7d203ecba74c668abc631fb261fca174c3c40c3f0eaeff91b5931fb3e"
+      url "https://github.com/aviadshiber/mp/releases/download/v0.1.2/mp_0.1.2_darwin_amd64.tar.gz"
+      sha256 "d0ef31d5241d2a4fb927fa8600fbf6c444e7e847d541aef11bef45cef24c8b34"
 
       define_method(:install) do
         bin.install "mp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/aviadshiber/mp/releases/download/v0.1.1/mp_0.1.1_darwin_arm64.tar.gz"
-      sha256 "6658ddfe9f99a321bf5a0278ff2d14ef6ec8ba00dd375da5605544fa6324bc0c"
+      url "https://github.com/aviadshiber/mp/releases/download/v0.1.2/mp_0.1.2_darwin_arm64.tar.gz"
+      sha256 "41ef14c60a3781e648562db1486d03a563590c629166985083d679290f6094d9"
 
       define_method(:install) do
         bin.install "mp"
@@ -29,15 +29,15 @@ class Mp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aviadshiber/mp/releases/download/v0.1.1/mp_0.1.1_linux_amd64.tar.gz"
-      sha256 "c4c4b0edac59d50b65ac61cdf075596276d950c5f0ca07ea243f45b53aea88ef"
+      url "https://github.com/aviadshiber/mp/releases/download/v0.1.2/mp_0.1.2_linux_amd64.tar.gz"
+      sha256 "895b75c21c30e8fb3891ac039768b42f342d2bd85875d510524a21b1cb0f9ad9"
       define_method(:install) do
         bin.install "mp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aviadshiber/mp/releases/download/v0.1.1/mp_0.1.1_linux_arm64.tar.gz"
-      sha256 "ab52d59caf097dfb0aea2e9ab66733982110901fad368ef2ab36bca83e7fe462"
+      url "https://github.com/aviadshiber/mp/releases/download/v0.1.2/mp_0.1.2_linux_arm64.tar.gz"
+      sha256 "8032703a14188d358c15a07076008f00a14fc31a72a857fe4f3b19fd94333b4d"
       define_method(:install) do
         bin.install "mp"
       end
