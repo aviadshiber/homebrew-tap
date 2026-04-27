@@ -1,8 +1,8 @@
 class JavaFunctionalLsp < Formula
   desc "Java LSP server enforcing functional programming best practices"
   homepage "https://github.com/aviadshiber/java-functional-lsp"
-  url "https://files.pythonhosted.org/packages/72/25/e6d5f7e200731db3c1ba8bff6425158bb807826d8226f9f3e70df051b667/java_functional_lsp-0.9.17.tar.gz"
-  sha256 "a8d167e3893bfbf1787e8cde1db20a2382d5289e43d05b18b89456fb64110d03"
+  url "https://files.pythonhosted.org/packages/82/2a/772fb3325a5a2140d312dfee09b88e744b6068ddd54372f7f72c7bd916f1/java_functional_lsp-0.9.18.tar.gz"
+  sha256 "604d6ca92776ae04592ed982dc8b74754a6ec2878b7e4f237810fdf45009e1da"
   license "MIT"
 
   depends_on "python@3.12"
