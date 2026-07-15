@@ -5,21 +5,21 @@
 class GroovyCheck < Formula
   desc "Lint Groovy/Jenkinsfile code locally and validate declarative pipeline syntax against a live Jenkins server"
   homepage "https://github.com/aviadshiber/groovy-check"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aviadshiber/groovy-check/releases/download/v0.1.1/groovy-check_0.1.1_darwin_amd64.tar.gz"
-      sha256 "87eaa682f1debceac6cde454aea2e0b15171e093f89df73cacbb11af4d527364"
+      url "https://github.com/aviadshiber/groovy-check/releases/download/v0.1.2/groovy-check_0.1.2_darwin_amd64.tar.gz"
+      sha256 "8f8c69c94568af56073504cd856ea2629c87093b88b9a7e1e03c8c323beedd1f"
 
       define_method(:install) do
         bin.install "groovy-check"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/aviadshiber/groovy-check/releases/download/v0.1.1/groovy-check_0.1.1_darwin_arm64.tar.gz"
-      sha256 "e00d87318be4180639010bc30b509bcaa9946767a3e2f201a628f01336c01e7a"
+      url "https://github.com/aviadshiber/groovy-check/releases/download/v0.1.2/groovy-check_0.1.2_darwin_arm64.tar.gz"
+      sha256 "fe70d0441c8342e627ad81f30215c77be070fe1d6e0ad524b60a99452b5c689a"
 
       define_method(:install) do
         bin.install "groovy-check"
@@ -29,15 +29,15 @@ class GroovyCheck < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aviadshiber/groovy-check/releases/download/v0.1.1/groovy-check_0.1.1_linux_amd64.tar.gz"
-      sha256 "79874489346afbfca04b9dc2d00f7a549b02f7af9c770ea715737352747ecd5e"
+      url "https://github.com/aviadshiber/groovy-check/releases/download/v0.1.2/groovy-check_0.1.2_linux_amd64.tar.gz"
+      sha256 "0dd03aac8b6de24747f845c0d7f07c92dc9ff66c7ba73a5070e6ded13a8aa30b"
       define_method(:install) do
         bin.install "groovy-check"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aviadshiber/groovy-check/releases/download/v0.1.1/groovy-check_0.1.1_linux_arm64.tar.gz"
-      sha256 "64ef5de775487825decf31a7ef7c46de9b7f0320cc41d2fbd9aacdf8dc51c37e"
+      url "https://github.com/aviadshiber/groovy-check/releases/download/v0.1.2/groovy-check_0.1.2_linux_arm64.tar.gz"
+      sha256 "84bbdf417b7fdd31321d58a9b24e7d715bbfc467a0dd8b2390509a9337688bd3"
       define_method(:install) do
         bin.install "groovy-check"
       end
